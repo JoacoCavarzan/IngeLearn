@@ -1,6 +1,6 @@
 """
     La lámpara enciende y apaga de forma alternada, mientras no finalice el programa
-    
+
 """
 from pymodbus.client import ModbusTcpClient
 import time
@@ -27,4 +27,4 @@ try:
         time.sleep(0.5)
 
 except KeyboardInterrupt:
-cliente.close()
+    cliente.close()
